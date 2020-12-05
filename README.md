@@ -108,6 +108,9 @@
     kubectl apply -f namespace.yml
     kubectl apply -f deployment.yml
     kubectl apply -f service.yml
+  Check Deployment and service
+    
+    kubectl get all -n nodejsdeploy
 # BACKUP AND RESTORE
   Let’s backup the "nodejsdeploy" namespace using velero
 
