@@ -6,8 +6,8 @@
     
     export AWS_REGION=us-east-1
 # Create an S3 bucket to backup cluster:
-        If you are running this workshop in a region other than us-east-1, use the command below to create S3 bucket. 
-        Regions outside of us-east-1 require the appropriate LocationConstraint to be specified in order to create the bucket in the desired region.
+  If you are running this workshop in a region other than us-east-1, use the command below to create S3 bucket. 
+  Regions outside of us-east-1 require the appropriate LocationConstraint to be specified in order to create the bucket in the desired region.
     
     export VELERO_BUCKET=$(aws s3api create-bucket \
     --bucket eksworkshop-backup-$(date +%s)-$RANDOM \
